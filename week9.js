@@ -24,6 +24,12 @@ $(document).ready(function(){
     });
     //wrap an <a> tag around the h1 text
     $("h1").wrapInner("<a id='top'></a>");
+
+    //insert "back to top " <a> tags after topic 
+    $("article h2").before(
+        "<a href='#top'>Back to the top</a>"
+    );
     
+
 
 })
