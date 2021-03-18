@@ -18,6 +18,12 @@ $(document).ready(function(){
     $("aside a").removeAttr("id");
     //add the href attributes to the <a> tags
     //in the aside
-    $("aside a")
+    $("aside a").attr("href", function(index) {
+        var href = "#heading" + (index + 1);
+        return href;
+    });
+    //wrap an <a> tag around the h1 text
+    $("h1").wrapInner("<a id='top'></a>");
+    
 
 })
