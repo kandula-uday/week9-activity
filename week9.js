@@ -29,7 +29,10 @@ $(document).ready(function(){
     $("article h2").before(
         "<a href='#top'>Back to the top</a>"
     );
-    
+    $("article a:first").remove();
+    $("article p:last").after(
+        "<a href='#top'>Back to Top</a>"
+    );
 
 
 })
